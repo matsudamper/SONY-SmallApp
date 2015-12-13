@@ -1,15 +1,12 @@
 <manifest>
 	<uses-permission android:name="com.sony.smallapp.permission.SMALLAPP" />
-	
 	<application android:label="@string/app_name" android:icon="@mipmap/ic_launcher”>
 		<uses-library android:name="com.sony.smallapp.framework" />
-			<service android:name=“SampleSmallApp” android:exported=“true” >
-			
-			<intent-filter>
+		<service android:name=“SampleSmallApp” android:exported=“true” >
+		<intent-filter>
 			<action android:name="com.sony.smallapp.intent.action.MAIN" />
 			<category   android:name=“com.sony.smallapp.intent.category.LAUNCHER” />
-			</intent-filter>
-			
-			</service>
+		</intent-filter>
+		</service>
 	</application>
 </manifest>
